@@ -2,7 +2,7 @@
   "name": "admin-panel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lakhal84.github.io/adminpanel",
+  "homepage": "https://lakhal84.github.io/ReactJs2",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
