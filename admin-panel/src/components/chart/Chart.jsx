@@ -85,7 +85,7 @@ export default function Chart() {
 
 
   return (
-    <div className='chart'>
+    <div className='chart fourth-color-background'>
       <h3 className="chartTitle">Sales Analytics</h3>
       <ResponsiveContainer width="100%" aspect={4/1}>
         <LineChart data={data}>

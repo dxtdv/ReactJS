@@ -1,6 +1,67 @@
-.widgetSm{
+.widgetSm {
     flex: 1;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     padding: 20px;
+    margin-right: 20px;
+}
+
+.wdgetSmTitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.widgetSmList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widgetSmListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px 5px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.widgetSmImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.widgetSmUserInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgetSmUsername {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.widgetSmUserJobTitle {
+    font-weight: 300;
+}
+
+.widgetSmButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.widgetSmButtonText {
+    color: rgb(255, 255, 255);
 }

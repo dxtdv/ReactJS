@@ -10,7 +10,7 @@ import './sidebar.css'
 
 export default function Sidebar() {
   return (
-    <div className='sidebar'>
+    <div className='sidebar first-color-background'>
         <div className="sidebarWrapper">
             <div className="sidebarMenu">
                 <h2 className="sidebarTitle">Dashboard</h2>

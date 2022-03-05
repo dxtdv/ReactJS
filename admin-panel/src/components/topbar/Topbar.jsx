@@ -5,10 +5,10 @@ import './topbar.css'
 
 export default function Topbar() {
   return (
-    <div className='topbar'>
+    <div className='topbar second-color-background'>
         <div className='topbarWrapper'>
             <div className='topLeft'>
-                <span className="logo">DXT</span>
+                <span className="logo third-color-font">DXT</span>
             </div>
             <div className='topRight'>
                 <div className="topbarIconContainer">

@@ -5,9 +5,9 @@ import Home from "./pages/home/Home";
 
 function App() {
   return (
-    <div >
+    <div className="third-color-font first-color-background">
       <Topbar />
-      <div className="container">
+      <div className="container first-color-background">
         <Sidebar />
         <Home />
       </div>
