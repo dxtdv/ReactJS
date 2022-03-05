@@ -26,7 +26,7 @@ export default function WidgetSm() {
           </div>
           <button className="widgetSmButton second-color-background third-color-font">
             <VisibilityIcon />
-           Display
+            Display
           </button>
         </li>
         <li className="widgetSmListItem">
