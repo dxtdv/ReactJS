@@ -2,9 +2,11 @@
 import React, { useContext, useState } from 'react'
 import { Card, Form, Button } from 'react-bootstrap'
 import { GlobalContext } from '../../contexts/GlobalContext'
+import {Link, useNavigate} from 'react-router-dom'
 
 
 const Signup = () => {
+    const navigate = useNavigate()
 
     const {isLoading, signUp } = useContext(GlobalContext)
     const [email, setEmail] = useState("")
@@ -20,19 +22,9 @@ const Signup = () => {
         }
 
         signUp(data);
+        navigate("/login")
     }
 
-
-    // const emailRef = useRef()
-    // const passwordRef = useRef()
-    // const passwordConfirmRef = useRef()
-    // const {signup} = useAuth
-
-    // function handleSubmit(e){
-    //     e.preventDefault()
-
-    //     signup(emailRef.current.value, passwordRef.current.value)
-    // }
 
     return (
         <>
@@ -49,7 +41,7 @@ const Signup = () => {
                             <Form.Control type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} required />
                         </Form.Group>
                         <Form.Group id="password-confirm">
-                            <Form.Label>Password Confirmation</Form.Label>
+                            {/* <Form.Label>Password Confirmation</Form.Label> */}
                             {/* <Form.Control type="password" value={passwordConfirmation} onChange={(e)=>(e.target.password)} required /> */}
                         </Form.Group>
                         <Button className="w-100 mt-2" type="submit"> {isLoading? "Signup..." :"Signup"}</Button>
@@ -57,7 +49,7 @@ const Signup = () => {
                 </Card.Body>
             </Card>
             <div className="w-100 text-center mt-2">
-                Already have an account? Log in
+                Already have an account? <Link to="/login">Log in</Link>
             </div>
         </>
     )
